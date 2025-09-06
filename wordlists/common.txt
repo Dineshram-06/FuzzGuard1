@@ -1,0 +1,1 @@
+admin administrator wp-admin login dashboard backup config test dev staging api uploads images assets css js includes tmp temp cache logs data db database mysql phpmyadmin webmail mail ftp ssh git svn .htaccess robots.txt sitemap.xml readme license wp-content wp-includes wp-login.php xmlrpc.php graphql swagger rest v1 v2 config.bak backup.zip index.bak
