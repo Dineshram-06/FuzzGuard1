@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIH1750 Fuzzer Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>SIH1750</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Scans</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+  </aside>
+  <div class="main">
+    <header>
+      <input type="text" placeholder="Search..." style="padding:0.5rem;border-radius:12px;border:none;">
+      <div>
+        <span>🔔</span>
+        <span>👤</span>
+      </div>
+    </header>
+
+    <section class="kpis">
+      <div class="card">
+        <h3>Total Scans</h3>
+        <p>{{ total_scans }}</p>
+      </div>
+      <div class="card">
+        <h3>Active Targets</h3>
+        <p>{{ active_targets }}</p>
+      </div>
+      <div class="card">
+        <h3>High Risks</h3>
+        <p style="color:var(--warning)">{{ high_risks }}</p>
+      </div>
+      <div class="card">
+        <h3>Success Rate</h3>
+        <p style="color:var(--success)">{{ success_rate }}%</p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="card"><canvas id="lineChart"></canvas></div>
+      <div class="card"><canvas id="donutChart"></canvas></div>
+      <div class="card"><canvas id="barChart"></canvas></div>
+    </section>
+
+    <section class="table-section">
+      <div class="card">
+        <h3>Recent Findings</h3>
+        <table>
+          <thead>
+            <tr><th>Path</th><th>Status</th><th>Type</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>/admin</td><td>200</td><td>Admin Panel</td></tr>
+            <tr><td>/wp-config.php</td><td>403</td><td>Config File</td></tr>
+            <tr><td>/uploads/</td><td>200</td><td>File Storage</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      Last updated: just now | SIH1750 WebApp Fuzzer
+    </footer>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

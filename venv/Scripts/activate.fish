@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV 'D:\sih1750_fuzzer\venv'
+set -gx VIRTUAL_ENV 'C:\Users\HARINI\Downloads\KPR\FuzzGuard1\venv'
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"Scripts $PATH
