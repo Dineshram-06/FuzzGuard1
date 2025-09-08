@@ -1,1 +1,0 @@
-wp-admin wp-content wp-includes wp-login.php wp-config.php wp-settings.php xmlrpc.php wp-cron.php wp-json

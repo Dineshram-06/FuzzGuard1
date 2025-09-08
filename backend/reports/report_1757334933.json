@@ -1,0 +1,16 @@
+[
+    {
+        "path": "/admin",
+        "status_code": 200,
+        "length": 29,
+        "technologies": [],
+        "risk": "high"
+    },
+    {
+        "path": "/config.json",
+        "status_code": 200,
+        "length": 35,
+        "technologies": [],
+        "risk": "high"
+    }
+]

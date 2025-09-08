@@ -1,0 +1,3 @@
+path,status_code,length,technologies,risk
+/admin,200,29,[],high
+/config.json,200,35,[],high

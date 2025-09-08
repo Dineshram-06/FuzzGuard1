@@ -1,1 +1,0 @@
-api v1 v2 graphql swagger rest endpoint
